@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- ........................materilized......................................................... -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!-- ----------------------------------bootstarp---------------------------------------------------------- -->
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <style>
+    .maincontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #273c75;
+      width: 100vw;
+      height: 100vh;
+
+
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.916);
+      width: 70%;
+      height: auto;
+      border-radius: 10px;
+      padding: 17px;
+    }
+    .c{
+      background-color: #FD8A8A;
+    }
+    .flex{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="maincontainer c">
+    <div class="box">
+      <div>
+        <h4>Registration Interface:</h4>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="row flex">
+            <div class="input-field  col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Middle Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_Father_Name" type="text" class="validate">
+              <label for="icon_Father_Name">Father Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="father_name" type="text" class="validate">
+              <label for="father_name">Middle Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="f_name" type="text" class="validate">
+              <label for="f_name">Last Name</label>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">chrome_reader_mode</i>
+              <input id="icon_enrollment" type="text" class="validate">
+              <label for="icon_enrollment">Enrollment number</label>
+            </div>
+
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone</i>
+              <input id="icon_telephone" type="tel" class="validate">
+              <label for="icon_telephone">Telephone</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">mail</i>
+              <input id="icon_mail" type="text" class="validate">
+              <label for="icon_mail">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="input-field col s1">
+              <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Male</span>
+              </label>
+            </div>
+            <div class="input-field col s1">
+              <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Female</span>
+              </label>
+            </div>
+            <div class="input-field col s1">
+              <label>
+                <input class="with-gap" name="group1" type="radio" />
+                <span>Other</span>
+              </label>
+            </div>
+
+
+
+          </div>
+          <div class="row mt-1">
+            <div class="col-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col-4">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="input-field col s6">
+              <input id="password" type="text" class="validate">
+              <label for="password">password</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="conform password" type="text" class="validate">
+              <label for="conform password">conform password</label>
+            </div>
+
+          </div>
+         <div class="col s6">
+          <button class="btn btn-primary col-12 c  border-light" type="button">Register</button>
+         </div>
+         <div class="col s6">
+          <button class="btn btn-primary col-12 c border-light" type="button">Reset</button>
+         </div>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="..public/stylesheet/style.css"> -->
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" />
+
+  <!-- ---------------------materalized css-------------------------------  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!----------------------------------------------jquery-------------------------------------------------------------------------------- -->
+  <script src="//code.jquery.com/jquery-3.6.3.min.js"></script>
+  <!-- -----------------------------------------google fonts--------------------------------------------------- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+
+    }
+
+
+    body {
+      background-color: #FFFBEB;
+    }
+
+    .navbg {
+      /* background-color: cornflowerblue; */
+      color: #fff;
+    }
+
+    .navcolor {
+      background-color: #000;
+    }
+
+    /* -----------------------------------------------------------ribin------------------------------------------------------------ */
+    .ribinbg {
+      background-image: url('https://www.svgheart.com/wp-content/uploads/2021/11/text-divider-decorative-frame-decoration-free-svg-file-SvgHeart.Com.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: fit-content;
+      height: 6rem;
+
+
+    }
+
+    .divvideo {
+      /* height: 200vh; */
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------ */
+
+    .abouth1color {
+      font-size: 3rem;
+      color: darkslategrey;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+
+    }
+
+    .c {
+      background-color: #FD8A8A;
+    }
+
+
+
+
+    .abouth2 {
+      margin-left: 10vw;
+      margin-top: 5rem;
+      font-family: 'Playfair Display', serif;
+      color: rgb(61, 89, 89);
+      font-size: 5vw;
+      line-height: 9vh;
+
+
+
+    }
+
+    .aboutp {
+      margin-left: 10vw;
+      margin-top: 9vh;
+      /* border: solid red; */
+      color: gray;
+    }
+
+    .aboutimg {
+
+      margin-top: 0.5rem;
+      height: 32.5rem;
+      width: 30rem;
+
+    }
+
+    .maincsvg {
+
+      margin-top: 40%;
+    }
+
+    /* .aboutimgbg{
+      background-image: url('/images/aboutbgimg.png');
+    } */
+    .aboutdiv {
+      overflow: hidden;
+      height: 35rem;
+
+    }
+
+    .eventp {
+      font-weight: 700;
+      color: darkslategrey;
+      font-size: larger;
+    }
+
+    .mainbtn {
+      margin-top: 30%;
+      margin-left: 43%;
+      height: 8vh;
+      width: 14vw;
+      font-weight: 700;
+      font-size: 1.5vw;
+      /* background-color:; */
+    }
+
+    /* -------------------------sponser-------------------------------------- */
+    .sponsor {
+      width: auto;
+      height: auto;
+      background-image: url("https://liveeventproductions.co.uk/wp-content/uploads/2018/01/event-production-services-live-event-productions-banner-image-4.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      /* position: sticky; */
+      /* border: solid red; */
+
+    }
+
+    .sponsercolor {
+
+      background-color: rgba(12, 3, 66, 0.781);
+      height: auto;
+      position: relative;
+    }
+
+    .sponsor h1 {
+      padding: 5rem 0 0 0;
+      font-size: 3.5rem;
+      color: aliceblue;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .sponserlogo {
+      margin-top: 5rem;
+
+    }
+
+    .sponsorimg {
+      margin-bottom: 5rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .countdown-container {
+      /* position: relative; */
+      top: 99.5vh;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+    }
+
+    .clock-item .inner {
+      height: 0px;
+      padding-bottom: 80%;
+      position: relative;
+      width: 55%;
+
+
+    }
+
+    .clock-canvas {
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 50%;
+      height: 0px;
+      padding-bottom: 100%;
+    }
+
+    .text {
+      color: #fff;
+      /* font-size: 10px; */
+      font-weight: bold;
+      margin-top: -14vh;
+      position: absolute;
+      /* top: 50%; */
+      text-align: center;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+      width: 100%;
+    }
+
+    .text .val {
+      font-size: 44px;
+    }
+
+    .text .type-time {
+      font-size: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .clock-item {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .clock-item {
+        margin: 0px 30px 30px 30px;
+      }
+    }
+
+
+    .title {
+      margin-top: 13vh;
+      font-size: 10rem;
+      margin-left: 10vw;
+      font-family: 'Playfair Display', serif;
+      color: antiquewhite;
+      text-transform: capitalize;
+    }
+
+    .title p {
+      font-size: 2rem;
+      margin-left: 40vw;
+      margin-top: -10vh;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      var fullDate = new Date();
+
+      $('.countdown').final_countdown({
+        start: 'fullDate',
+        end: '<%=titleData.titletime%>',
+        now: '1387461319',
+        selectors: {
+          value_seconds: '.clock-seconds .val',
+          canvas_seconds: 'canvas_seconds',
+          value_minutes: '.clock-minutes .val',
+          canvas_minutes: 'canvas_minutes',
+          value_hours: '.clock-hours .val',
+          canvas_hours: 'canvas_hours',
+          value_days: '.clock-days .val',
+          canvas_days: 'canvas_days'
+        },
+        seconds: {
+          borderColor: '#7995D5',
+          borderWidth: '4'
+        },
+        minutes: {
+          borderColor: '#ACC742',
+          borderWidth: '4'
+        },
+        hours: {
+          borderColor: '#ECEFCB',
+          borderWidth: '4'
+        },
+        days: {
+          borderColor: '#FF9900',
+          borderWidth: '4'
+        }
+      }, function () {
+        // Finish callback
+      });
+    });
+  </script>
+
+
+</head>
+
+<body>
+
+  <div class="divvideo">
+    <div class="navcolor position-absolute z-4">
+
+
+      <nav class="navbar navbar-expand-lg fixed-top navbar-scroll c">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#!">CraftY</a>
+          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#!">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Attractions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Opinions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav d-flex flex-row">
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="#!">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="#!">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <div class="position-absolute z-3 text-white  d-flex title justify-content-center">
+      <h1 class="title col-12">
+        <%= titleData.title %>
+          <p>coming soon....</p>
+
+      </h1>
+    </div>
+
+    <div>
+      <button type="button" class="btn btn-primary btn-lg align-self-center  mainbtn z-3 position-absolute  c ">Join
+        Now</button>
+    </div>
+
+    <div class="countdown-container container position-absolute z-3">
+      <div class="clock row">
+
+        <!-- days -->
+        <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+          <div class="wrap">
+            <div class="inner">
+              <div id="canvas_days" class="clock-canvas"></div>
+              <div class="text">
+                <p class="val">0</p>
+                <p class="type-days type-time">DAYS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- hours -->
+
+        <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+          <div class="wrap">
+            <div class="inner">
+              <div id="canvas_hours" class="clock-canvas"></div>
+              <div class="text">
+                <p class="val">0</p>
+                <p class="type-hours type-time">HOURS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- minutes -->
+        <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+          <div class="wrap">
+            <div class="inner">
+              <div id="canvas_minutes" class="clock-canvas"></div>
+              <div class="text">
+                <p class="val">0</p>
+                <p class="type-minutes type-time">MINUTES</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- seconds -->
+        <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+          <div class="wrap">
+            <div class="inner">
+              <div id="canvas_seconds" class="clock-canvas"></div>
+              <div class="text">
+                <p class="val">0</p>
+                <p class="type-seconds type-time">SECONDS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
+
+
+
+
+    <div class="position-relative h-auto">
+      <svg class="  maincsvg  z-3 position-absolute p-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path id="path" fill="#FFFBEB" fill-opacity="1"
+          d="M0,190L60,202.7C120,213,240,235,360,234.7C480,235,600,213,720,186.7C840,160,960,128,1080,122.7C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+      </svg>
+
+
+
+
+
+    </div>
+    <video autoplay muted width="100%" loop>
+      <source src="/videos/video.mp4" type="video/webm">
+    </video>
+  </div>
+
+
+  <div class="col-12  mt-5  d-flex justify-content-center  ">
+    <h1 class="d-flex ribinbg justify-content-center mt-4 abouth1color pt-4 ">About Event</h1>
+  </div>
+
+
+
+
+
+  <div class="d-flex flex-row  mb-3 flex-wrap  mt-5">
+
+
+    <div class="  aboutdiv aboutimgbg col-lg-6 mx-4   d-flex justify-content-center align-item-lg-center  ">
+      <img src="/images/aboutbgimg.png" class="img-fluid  " />
+
+      <img src="https://www.festivalpro.com/articles/1568.png"
+        class="img-fluid  rounded-circle  aboutimg  pt-5  pr-3  z-3 position-absolute " />
+    </div>
+    <div class="col-lg-5 p">
+      <h2 class="abouth2">this is the summary of events</h2>
+      <p class="aboutp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, itaque quasi quidem adipisci
+        suscipit ab
+        ex doloremque tempora facere, vitae odit possimus magnam! Facilis dolorum iste enim suscipit cum!
+        Delectus?
+      </p>
+    </div>
+  </div>
+
+
+  <div id="event">
+
+    <div id="eventcolor">
+      <div class="mt-5  d-flex justify-content-center  ">
+        <h1 class="d-flex justify-content-center mt-4 abouth1color  pt-3  ribinbg"> &nbsp;&nbsp;&nbsp; Event's
+          &nbsp;
+          &nbsp;&nbsp;</h1>
+      </div>
+      <div class="d-flex flex-row mb-3 flex-wrap  d-flex justify-content-around mt-3">
+
+        <div class="d-flex flex-column">
+          <img title="event pic" src="https://www.freepnglogos.com/uploads/trophy-png/trophy-award-winner-png-33.png"
+            width="180vw">
+          <p class="d-flex justify-content-center  eventp">Technoparv</p>
+        </div>
+        <div class="d-flex flex-column ">
+          <img title="event pic"
+            src="https://play-lh.googleusercontent.com/XMkNGPrz47-3f59qLv9Vu2anp1GAZb5ae3iPetsMPRlZ-IzjJT3ngVjiQZLGjAuEqA"
+            width="180vw">
+          <p class="d-flex justify-content-center eventp">vilay</p>
+        </div>
+        <div class="d-flex flex-column ">
+          <img title="event pic" src="https://freepngimg.com/save/126131-android-robot-png-download-free/1000x1000"
+            width="180vw">
+          <p class="d-flex justify-content-center eventp">Ibtida</p>
+        </div>
+        <div class="d-flex flex-column">
+          <img title="event pic"
+            src="https://www.freepnglogos.com/uploads/robot-png/robot-eset-nod-and-smart-security-lifetime-crack-syed-qasim-12.png"
+            width="160vw">
+          <p class="d-flex justify-content-center eventp">Adiue</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div id="sponsor" class="sponsor">
+    <div class="sponsercolor">
+      <div>
+        <a href="/index/sponsordata">
+          <h1 class="d-flex justify-content-center  abouth1color  mt-5"> Event Sponsors</h1>
+        </a>
+      </div>
+
+
+      <div class="d-flex justify-content-evenly col-12 flex-wrap sponserlogo ">
+        <% sponsorData.map((item)=>{ %>
+          <div class="d-flex flex-column justify-content-around  flex-wrap  sponsorimg">
+            <img title="sponser logo" src="/images/<%= item.sponserpic %>" width="170vw" class="mx-5" />
+
+          </div>
+          <% }) %>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div>
+    <footer class="page-footer c">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript"
+  src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/js/kinetic.js"></script>
+<script type="text/javascript"
+  src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/jquery.final-countdown.js"></script>
+
+</html>

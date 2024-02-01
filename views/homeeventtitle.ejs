@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <style>
+        .maincontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #273c75;
+            width: 100vw;
+            height: 100vh;
+
+
+        }
+
+        .box {
+            background-color: rgba(255, 255, 255, 0.916);
+            width: 55%;
+            height: auto;
+            border-radius: 10px;
+            padding: 12px;
+        }
+
+        .ribinbg {
+            background-image: url('https://www.pngmart.com/files/11/Luxury-Golden-Frame-PNG-Transparent-Image.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: auto;
+            height: 7rem;
+
+
+        }
+
+
+        .abouth1color {
+            font-size: 3.2rem;
+            color:azure;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+
+        }
+
+
+
+
+
+
+
+        .heading {
+            color: #273c75;
+            font-weight: 700;
+        }
+
+        .daysstyle {
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .c {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer d-flex flex-column">
+        <div class="col-12   d-flex justify-content-center pb-5  ">
+            <h1 class="d-flex ribinbg justify-content-center abouth1color pt-3  ">About Event</h1>
+        </div>
+        <div class="box mb-5">
+
+            <div class="heading">
+                <div class="col-12 d-flex flex-row">
+                    <div class="col-6">
+                        <img src="https://static.wixstatic.com/media/556414_ffc6becf11304044a4da8964e9a37af9~mv2.png/v1/fill/w_500,h_275,al_c,q_85,enc_auto/sponsor-icon.png"
+                            width="80" />
+                        Home title Interface
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <a href="/index/fetchdata"><img
+                                src="https://www.pngall.com/wp-content/uploads/2016/03/Eyes-PNG-5.png" width="30" /></a>
+                    </div>
+                </div>
+                <form class="row g-3" action="/index/titlesubmit" method="get">
+
+
+                    <div class="col-md-6">
+                        <label for="title" class="form-label">Event Title:</label>
+                        <input type="text" class="form-control" id="title" name="title">
+                    </div>
+
+
+
+                    <div class="col-md-6">
+                        <label for="titleDate" class="form-label"> Event Date:</label>
+                        <input type="date" class="form-control" id="titleDate" name="titledate">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-grid gap-5 col-12 mx-10">
+                            <button class="btn btn-primary" type="submit"><b>Submit</b></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-grid gap-5 col-12 mx-auto">
+                            <button class="btn btn-primary" type="reset"><b>Reset</b></button>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-md-12 d-flex justify-content-center text-success">
+                    <%= message %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
